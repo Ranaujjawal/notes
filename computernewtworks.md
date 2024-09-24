@@ -6,7 +6,7 @@
 
     OSI(open system  interconnection) model -  A 7-layered model that describes how data is transmitted over a  network. 
     
-   # ** 7 layers of OSI model are : -**
+ # ** 7 layers of OSI model are : -**
 
         #### 1-  Physical layer =>   Defines how data is transmitted over a physical medium. It is responsible for transmitting bits from  one device to another. [ devices
          HUB(forward data to all the connected devices don't filter data ) , Repeater(2 ports amplify the strength of the signal )] 
@@ -30,7 +30,7 @@
          #### 7-  Application Layer =>    Provides services to end-user applications, such as email and  file transfer. It is responsible for   providing services to end-user applications, such as email and file transfer.
 
 
-        # ** Network Topologies**
+ # ** Network Topologies**
 
         1.  Bus Topology =>   All devices are connected to a single cable, called  the backbone. Data is transmitted over the backbone, and each device listens for data addressed to it.
         2.  Star Topology =>   All devices are connected to a central device, called  the hub. Data is transmitted from the sender to the hub, and the hub forwards the data to  the intended recipient.
@@ -38,7 +38,7 @@
         4.  Mesh Topology =>   Each device is connected to every other device,  creating a web-like  structure. Data can be transmitted between any two devices, and each device acts  as a repeater, amplifying the signal and forwarding it to the next device.
         5.  Tree Topology =>   A combination of bus and star topologies, where  devices are  connected to a central device, and the central device is connected to a backbone cable.  Data is transmitted from the sender to the central device, and the central device forwards the data to the  intended recipient.
 
-        ## Advanatges and Disadvantages of all  the topologies are as follows:
+ ## Advanatges and Disadvantages of all  the topologies are as follows:
         Bus Topology =>   Advantages:  Easy to install and maintain,  cost-effective.  Disadvantages:  Difficult to troubleshoot,  prone to data corruption.
         Star Topology =>   Advantages:  Easy to install and maintain,  cost-effective,   easy to troubleshoot.  Disadvantages:  Central device can become a  single point  of failure.
         Ring Topology =>   Advantages:  High-speed data transfer,  reliable data transfer.   Disadvantages:  Difficult to install and maintain,  prone to data corruption.
@@ -46,12 +46,12 @@
         Tree Topology =>   Advantages:  Easy to install and maintain,  cost-effective,    easy to troubleshoot.  Disadvantages:  Central device can become a  single point   of failure.
 
         Circuit Switching :  -  In this type of switching, a dedicated path is established between the sender and receiver before data  is transmitted. The path is held for the duration of the transmission, and then released.  This type of switching is  used in traditional telephone networks.
-         ## Circuit Switching
-         ![circuit](https://media.geeksforgeeks.org/wp-content/uploads/20240424165529/Circuit-Switching.webp)
+ ## Circuit Switching
+ ![circuit](https://media.geeksforgeeks.org/wp-content/uploads/20240424165529/Circuit-Switching.webp)
 
         Packet Switching :   -  In this type of switching, data is divided into small packets, and each packet is  transmitted independently.  The packets are routed through the network, and reassembled at the receiver's  end.  This type of switching is used in modern computer networks. 
-        ## Packet Switching
-        ![packet](https://networkencyclopedia.com/wp-content/uploads/2019/10/packet-switching.png)
+ ## Packet Switching
+ ![packet](https://networkencyclopedia.com/wp-content/uploads/2019/10/packet-switching.png)
 
         **Advantages and Disadvantages of  Circuit Switching and Packet Switching are as follows:**
         Circuit Switching =>   Advantages:  Guaranteed bandwidth,  low latency.  Disadvantages:  Inefficient use of resources,  prone to congestion. 
