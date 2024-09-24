@@ -46,7 +46,7 @@
         Tree Topology =>   Advantages:  Easy to install and maintain,  cost-effective,    easy to troubleshoot.  Disadvantages:  Central device can become a  single point   of failure.
 
         Circuit Switching :  -  In this type of switching, a dedicated path is established between the sender and receiver before data  is transmitted. The path is held for the duration of the transmission, and then released.  This type of switching is  used in traditional telephone networks.
-         ![circuit](![https://](https://media.geeksforgeeks.org/wp-content/uploads/20240424165529/Circuit-Switching.webp))
+         ![circuit](https://media.geeksforgeeks.org/wp-content/uploads/20240424165529/Circuit-Switching.webp)
 
         Packet Switching :   -  In this type of switching, data is divided into small packets, and each packet is  transmitted independently.  The packets are routed through the network, and reassembled at the receiver's  end.  This type of switching is used in modern computer networks. 
 
