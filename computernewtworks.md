@@ -1,138 +1,161 @@
-->  A computer networks is a collection of devices  that are connected together to share resources and exchange data. 
+# Computer Networks
+
+-  A computer networks is a collection of devices  that are connected together to share resources and exchange data. 
     The devices in a network can be computers, printers.
 
-    >>  Protocol -  A set of rules that govern how data is transmitted over a network. 
-    >>   Network Topology -  The physical or logical arrangement of devices in a network. 
+     Protocol -  A set of rules that govern how data is transmitted over a network. 
+       Network Topology -  The physical or logical arrangement of devices in a network. 
 
     OSI(open system  interconnection) model -  A 7-layered model that describes how data is transmitted over a  network. 
     
  # ** 7 layers of OSI model are : -**
 
    #### 1-  Physical layer =>
-        Defines how data is transmitted over a physical medium. It is responsible for transmitting bits from  one device to another. 
-        [ devices HUB(forward data to all the connected devices don't filter data ) , Repeater(2 ports amplify the strength of the signal )] 
+
+ - Defines how data is transmitted over a physical medium. It is responsible for transmitting bits from  one device to another. 
+ [ devices HUB(forward data to all the connected devices don't filter data ) , Repeater(2 ports amplify the strength of the signal )] 
 
  #### 2-  Data Link Layer => 
-        Provides error-free transfer of data frames between two devices on the same network. It is responsible  for framing, error detection and correction.
-         [Switches ( forward data to the specific device using MAC Address also performs error checking ) , Bridges ( connect two or more networks together, 2-4 ports generally )] HOP To HOP delivery
-        MAC(Media Access Control) = >   A unique address assigned to each device in a network. It is used to identify a device on  a network. consist of 12 digit
+
+- Provides error-free transfer of data frames between two devices on the same network. It is responsible  for framing, error detection and correction.
+ [Switches ( forward data to the specific device using MAC Address also performs error checking ) , Bridges ( connect two or more networks together,
+  2-4 ports generally )] HOP To HOP delivery
+
+- `MAC(Media Access Control)` = >   A unique address assigned to each device in a network. It is used to identify a device on  a network. consist of 12 digit
          hexadecimal number first 6 digits represents the manufacturer like HP,Huwaie next 6 digits represents the Network controller.
-         -- 3 Types Unicast(LSB of 1st octate is set to  0), Multicast(LSB of 1st octate is set to 1), Broadcast (LSB of all digits is set to FF);
 
-   #### 3-  Network Layer =>  
-          Routes data between devices on different networks. It is responsible for  logical addressing, routing, congestion control.
-         [Router (forward data to the specific device using IP address also selecting shorttest path to transfer data from sender to reciever)]
-          Sender's and Reciever's IP address are placec in the header by the Network Layer.
+- 3 Types `Unicast`(LSB of 1st octate is set to  0), `Multicast`(LSB of 1st octate is set to 1),`Broadcast` (LSB of all digits is set to FF);
 
-   #### 4- Transport Layer =>   
-           Provides reliable data transfer between devices. It is responsible for end to end delivery of the complete message.
+#### 3-  Network Layer =>  
+- Routes data between devices on different networks. It is responsible for  logical addressing, routing, congestion control.
+ [Router (forward data to the specific device using IP address also selecting shorttest path to transfer data from sender to reciever)]
+ Sender's and Reciever's IP address are placec in the header by the Network Layer.
+
+#### 4- Transport Layer =>   
+ - Provides reliable data transfer between devices. It is responsible for end to end delivery of the complete message.
             It also provides aknowledegement of the data send and retransmits the data if aknowledgement donot came.
 
-   #### 5- Session Layer =>   
-            Establishes, maintains, and terminates connections between applications running on different devices.
-              It is responsible for  synchronization, and session management and provides security.
-               It uses encryption techniniqes to secure data to prevent  eavesdropping.
-                It also  provides authentication and authorization means  to ensure that only authorized users can access the data.
-                 Dialogue control ensuring full duplex and halfduplex  communication. 
+#### 5- Session Layer =>   
+ - Establishes, maintains, and terminates connections between applications running on different devices.
+        It is responsible for  synchronization, and session management and provides security.
+        It uses encryption techniniqes to secure data to prevent  eavesdropping.
+        It also  provides authentication and authorization means  to ensure that only authorized users can access the data.
+        Dialogue control ensuring full duplex and halfduplex  communication. 
 
-   #### 6-  Presentation Layer =>  
-           Converts data into a format that can be understood by the  receiving device.It is responsible for encryption and decryption of data , 
-           data compression and decompression, and data formatting.  It also provides data conversion and translation for ex ASCII to Extended 
-           Binary coded decimal interchange code (EBCDIC)
+#### 6-  Presentation Layer =>  
+- Converts data into a format that can be understood by the  receiving device.It is responsible for encryption and decryption of data , 
+data compression and decompression, and data formatting.  It also provides data conversion and translation for ex ASCII to Extended 
+Binary coded decimal interchange code (EBCDIC)
 
 
-   #### 7-  Application Layer =>
-            Provides services to end-user applications, such as email and  file transfer. It is responsible for 
+#### 7-  Application Layer =>
+- Provides services to end-user applications, such as email and  file transfer. It is responsible for 
               providing services to end-user applications, such as email and file transfer.
 
 
- # ** Network Topologies**
+# ** Network Topologies**
 
-        1.  Bus Topology =>   All devices are connected to a single cable, called  the backbone. Data is transmitted over the backbone,
+1.  `Bus Topology` =>   All devices are connected to a single cable, called  the backbone. Data is transmitted over the backbone,
          and each device listens for data addressed to it.
 
-        2.  Star Topology =>   All devices are connected to a central device, called  the hub. Data is transmitted from the sender to the hub,
+2.  `Star Topology` =>   All devices are connected to a central device, called  the hub. Data is transmitted from the sender to the hub,
          and the hub forwards the data to  the intended recipient.
 
-        3.  Ring Topology =>   Devices are connected in a circular configuration, and data  is transmitted in one direction around the ring.  
+3.  `Ring Topology` =>   Devices are connected in a circular configuration, and data  is transmitted in one direction around the ring.  
         Each device acts as a repeater, amplifying the signal and forwarding it to the next device.
 
-        4.  Mesh Topology =>   Each device is connected to every other device,  creating a web-like  structure. Data can be transmitted between 
+4.  `Mesh Topology` =>   Each device is connected to every other device,  creating a web-like  structure. Data can be transmitted between 
         any two devices, and each device acts  as a repeater, amplifying the signal and forwarding it to the next device.
 
-        5.  Tree Topology =>   A combination of bus and star topologies, where  devices are  connected to a central device, 
+5.  `Tree Topology` =>   A combination of bus and star topologies, where  devices are  connected to a central device, 
         and the central device is connected to a backbone cable.  Data is transmitted from the sender to the central device, and
          the central device forwards the data to the  intended recipient.
 
- ## Advanatges and Disadvantages of all  the topologies are as follows:
-        Bus Topology =>   Advantages:  Easy to install and maintain,  cost-effective.  Disadvantages:  Difficult to troubleshoot, 
+## Advanatges and Disadvantages of all  the topologies are as follows:
+
+Bus Topology =>   `Advantages`:  Easy to install and maintain,  cost-effective.  `Disadvantages`:  Difficult to troubleshoot, 
          prone to data corruption.
-        Star Topology =>   Advantages:  Easy to install and maintain,  cost-effective,   easy to troubleshoot.  Disadvantages:
+        
+Star Topology =>   `Advantages`:  Easy to install and maintain,  cost-effective,   easy to troubleshoot.  `Disadvantages`:
           Central device can become a  single point  of failure.
-        Ring Topology =>   Advantages:  High-speed data transfer,  reliable data transfer.   Disadvantages:  Difficult to install and maintain,
+        
+Ring Topology =>   `Advantages`:  High-speed data transfer,  reliable data transfer.   `Disadvantages`:  Difficult to install and maintain,
           prone to data corruption.
-        Mesh Topology =>   Advantages:  Highly reliable,  fault-tolerant,   high-speed data transfer.  Disadvantages:  Difficult to install
+
+Mesh Topology =>   `Advantages`:  Highly reliable,  fault-tolerant,   high-speed data transfer.  `Disadvantages`:  Difficult to install
          and maintain,    cost-effective.
-        Tree Topology =>   Advantages:  Easy to install and maintain,  cost-effective,    easy to troubleshoot.  Disadvantages:  Central
+
+Tree Topology =>   `Advantages`:  Easy to install and maintain,  cost-effective,    easy to troubleshoot.  `Disadvantages`:  Central
          device can become a  single point   of failure.
 
 # Switching
 
- ## Circuit Switching
+## Circuit Switching
  ![circuit](https://media.geeksforgeeks.org/wp-content/uploads/20240424165529/Circuit-Switching.webp)
 
-               Circuit Switching :  -  In this type of switching, a dedicated path is established between the sender and receiver 
+- Circuit Switching :  -  In this type of switching, a dedicated path is established between the sender and receiver 
                before data  is transmitted. The path is held for the duration of the transmission, and then released.  This type of 
                switching is  used in traditional telephone networks.
      
- ## **Packet Switching
+## **Packet Switching
  ![packet](https://networkencyclopedia.com/wp-content/uploads/2019/10/packet-switching.png)
 
-          Packet Switching :   -  In this type of switching, data is divided into small packets, and each packet is 
+ - Packet Switching :   -  In this type of switching, data is divided into small packets, and each packet is 
            transmitted independently.  The packets are routed through the network, and reassembled at the receiver's end. 
            This type of switching is used in modern computer networks. 
        
-  **Types of Packet switching
-  1.  Connection-Oriented Packet Switching(Virtual circuit) =>   A dedicated path / virtual connection is established between
+  **Types of Packet switching**
+
+ 1.  `Connection-Oriented Packet Switching(Virtual circuit)` =>   A dedicated path / virtual connection is established between
    the sender and receiver before data is transmitted.   The path is held for the duration of the transmission, and then released.
       This type of packet switching is used in traditional telephone networks. 
 
-  2.   Connectionless Packet Switching (Datagram) =>   No dedicated path is established between the sender and receiver.  
+ 2.   `Connectionless Packet Switching (Datagram)` =>   No dedicated path is established between the sender and receiver.  
    Each packet is transmitted independently, and the receiver reassembles the packets.  This type of  packet switching is used in modern computer networks. 
 
-## **Advantages and Disadvantages of  Circuit Switching and Packet Switching are as follows:**
-       () Circuit Switching =>   Advantages:  Guaranteed bandwidth,  low latency, enhanced security as only two parties are included.
-         Disadvantages:  Inefficient use of resources,Expensive, high latency as delay in establishing the dedicated path. 
-        () Packet Switching =>   Advantages:  Efficient use of resources,  flexible routing.   Disadvantages:  High latency,  
+``` 
+```
+## Advantages and Disadvantages of  Circuit Switching and Packet Switching are as follows:
+
+- Circuit Switching =>   `Advantages`:  Guaranteed bandwidth,  low latency, enhanced security as only two parties are included.
+         `Disadvantages`:  Inefficient use of resources,Expensive, high latency as delay in establishing the dedicated path. 
+
+- Packet Switching =>   `Advantages`:  Efficient use of resources,  flexible routing.   `Disadvantages`:  High latency,  
         prone to packet loss.
  
+ ```
+ ```
 ### Message Switching
 ![message](https://media.geeksforgeeks.org/wp-content/uploads/20240425133145/Message-swithcing.webp)      
 
-      () Message switching => In this type of switching , a message is transmitted as a single unit, and the entire message is stored 
+- `Message switching` => In this type of switching , a message is transmitted as a single unit, and the entire message is stored 
       in a buffer until  it is transmitted.  This type of switching is used in traditional telex networks. Their is no limit on  the 
       size of the message block. Entire message is transmittedin one go. Message do not directly reach the destination and reach 
       intermidate nodes before reaching the destination.
 
-       ## **Advantages and Disadvantages of Message swithcing and Packet switching 
+ ## **Advantages and Disadvantages of Message swithcing and Packet switching 
 
-       Message Switching =>    Advantages:  Guaranteed delivery, message length is not limited, prority can be assigned to messages.  
+- Message Switching =>    Advantages:  Guaranteed delivery, message length is not limited, prority can be assigned to messages.  
                                Disadvantages:  Inefficient  use of resources, prone to congestion(accumumulation of messages at node),
                                  cannot be used for real-time applications as storing messages cause.
 
-
+```
+```
 ## Data link Layer Protocols
 ### Protocols : 
 
-       1) Stop-wait :-   In this protocol, the sender sends a frame and waits for an acknowledgement from the receiver before sending the next frame.
+ 1) Stop-wait :-   In this protocol, the sender sends a frame and waits for an acknowledgement from the receiver before sending the next frame.
        If the acknowledgement is not received, the sender retransmits the frame.  This protocol is  simple to implement but has low throughput(amount of 
-       data transmitted per unit time. It is measured in bits per second (bps).) It is used in low-speed networks. 
-       2)  Go-back-N :-   In this protocol, the sender sends a frame and continues sending frames until it  receives an acknowledgement from the receiver. 
+       data transmitted per unit time. It is measured in bits per second (bps).) It is used in low-speed networks.
+
+ 2)  Go-back-N :-   In this protocol, the sender sends a frame and continues sending frames until it  receives an acknowledgement from the receiver. 
        If the acknowledgement is not received, the sender retransmits all the frames sent since the last  acknowledgement.  This protocol is used in high-speed networks. 
-       3) Selective Repeat :-    In this protocol, the receiver sends an acknowledgement for each frame it receives.  If the acknowledgement  is not received, the sender retransmits the frame.  This protocol is used in high-speed  networks. 
+
+ 3) Selective Repeat :-    In this protocol, the receiver sends an acknowledgement for each frame it receives.  If the acknowledgement  is not received, the sender retransmits the frame.  This protocol is used in high-speed  networks. 
 
 ### Difference between Stop-wait and Go-back-N and Selective Repeat : 
-      # Comparison of Stop and Wait, Go-Back-N, and Selective Repeat Protocols
+
+ # Comparison of Stop and Wait, Go-Back-N, and Selective Repeat Protocols
 
 | Key                      | Stop and Wait Protocol                             | Go-Back-N Protocol                           | Selective Repeat Protocol                                      |
 |--------------------------|--------------------------------------------------------------|---------------------------------------------------------|----------------------------------------------------------------|
@@ -146,13 +169,13 @@
        
 ### Bit stuffing  and Byte  stuffing : 
 
-       =>  Bit stuffing:  the delimiting flag sequence generally contains six or more consecutive 1s. Most protocols use the 8-bit pattern 01111110
+`Bit stuffing:`  the delimiting flag sequence generally contains six or more consecutive 1s. Most protocols use the 8-bit pattern 01111110
                as flag. In order to differentiate the message from the flag in case of same sequence, a single bit is stuffed in the message. Whenever a 0
                bit is followed by five consecutive 1bits in the message, an extra 0 bit is stuffed at the end of the five 1s. When the receiver receives 
                the message, it removes the stuffed 0s after each sequence of five 1s. The un-stuffed message is then sent to the upper layers.
 
  
-       =>  Byte stuffing:   If the pattern of the flag byte is present in the message byte sequence, there should be a strategy so that the
+`Byte stuffing:`   If the pattern of the flag byte is present in the message byte sequence, there should be a strategy so that the
               receiver does not consider the pattern as the end of the frame. Here, a special byte called the escape character (ESC) is stuffed
                before every byte in the message with the same pattern as the flag byte. If the ESC sequence is found in the message byte, then 
                another ESC byte is stuffed before it.
@@ -161,38 +184,44 @@
 # ERROR Corrections Types :
 
 ### CRC(Cyclic Redundancy Check)
-       CRC => In  this method, a polynomial is used to generate a checksum for the data. The checksum is appended to  the data and sent to the receiver. The reciever
+- CRC => In  this method, a polynomial is used to generate a checksum for the data. The checksum is appended to  the data and sent to the receiver. The reciever
        calculates the checksum using the same polynomial and compares it with the received checksum. If they match,  the data is accepted, otherwise it is rejected.
        Advantages:  Simple to implement, fast, and efficient.  Disadvantages:   Not suitable for long data streams.
        For N length data and M length divisor (M-1) 0s are appedend and then R is calculted and then then N+R is sent reciver cheks by peforming XOR with the D
        If 0 accept otherwise reject.
 ![](https://th.bing.com/th/id/OIP.gAioh2aSWc73Im5BqBXW6AHaHd?pid=ImgDet&w=195&h=196&c=7&dpr=1.4)
-
+```
+```
 ### Hamming Distance
-       Hamming => Hamming Code is simply the use of extra parity bits to allow the identification of an error.
+- Hamming => Hamming Code is simply the use of extra parity bits to allow the identification of an error.
 
-              Step 1: Write the bit positions starting from 1 in binary form (1, 10, 11, 100, etc).
+Step 1: Write the bit positions starting from 1 in binary form (1, 10, 11, 100, etc).
 
-              Step 2: All the bit positions that are a power of 2 are marked as parity bits (1, 2, 4, 8, etc).
+Step 2: All the bit positions that are a `power of 2` are marked as `parity bits (1, 2, 4, 8, etc)`.
 
-              Step 3: All the other bit positions are marked as data bits.
+Step 3: All the other bit positions are marked as data bits.
 
-              Step 4: Each data bit is included in a unique set of parity bits, as determined its bit position in binary form:
+Step 4: Each data bit is included in a unique set of parity bits, as determined its bit position in binary form:
 
-              a. Parity bit 1 covers all the bits positions whose binary representation includes a 1 in the least
-               significant position (1, 3, 5, 7, 9, 11, etc).
-              b. Parity bit 2 covers all the bits positions whose binary representation includes a 1 in the second position from the least
-               significant bit (2, 3, 6, 7, 10, 11, etc).
-              c. Parity bit 4 covers all the bits positions whose binary representation includes a 1 in the third position from the least 
-              significant bit (4–7, 12–15, 20–23, etc).
-              d. Parity bit 8 covers all the bits positions whose binary representation includes a 1 in the fourth position from the least 
-              significant bit bits (8–15, 24–31, 40–47, etc).
+ - a. Parity bit 1 covers all the bits positions whose binary representation includes a 1 in the least
+               significant position `(1, 3, 5, 7, 9, 11, etc)`.
+              
+- b. Parity bit 2 covers all the bits positions whose binary representation includes a 1 in the second position from the least
+               significant bit `(2, 3, 6, 7, 10, 11, etc)`.
 
-              resoective even parity is calculated by couting the ones if even 0 else 1 then data is sent n data bits k redundant bits 
-              reciever checks the data by again calcultaing the redudant bits if 0000  accept else covert it to binary to get the error bit.
+- c. Parity bit 4 covers all the bits positions whose binary representation includes a 1 in the third position from the least 
+              significant bit `(4–7, 12–15, 20–23, etc)`.
+
+- d. Parity bit 8 covers all the bits positions whose binary representation includes a 1 in the fourth position from the least 
+              significant bit bits `(8–15, 24–31, 40–47, etc)`.
+
+- respective even parity is calculated by couting the ones if even 0 else 1 then data is sent n data bits k redundant bits  reciever checks the data by again calcultaing the redudant bits if 0000  accept else covert it to binary to get the error bit.
+
+
 ![](https://th.bing.com/th/id/R.27b3885dfae2ddbab394d9f1cc1e32ad?rik=7YY0%2bpFg6FMKBg&riu=http%3a%2f%2fecomputernotes.com%2fimages%2fError-Detection--Correction.jpg&ehk=7vKPbPtsJeJAddg%2b4uUZ8f38xoB8wIqNMWEkBCYbpU0%3d&risl=&pid=ImgRaw&r=0)
 
-
+```
+```
 ## Access Control Protocols
 
 ### Pure Aloha
@@ -483,7 +512,7 @@ IPv6 addresses several limitations of IPv4:
  # What Happens When You Type `google.com` in the Browser?
  ![](https://miro.medium.com/v2/resize:fit:1200/1*b1zrZoaJPq_FBdQkAsNJng.jpeg)
 
-       When you type `google.com` in your browser and press Enter, a series of processes occur behind the scenes to display the Google homepage. 
+-  When you type `google.com` in your browser and press Enter, a series of processes occur behind the scenes to display the Google homepage. 
        Here is a detailed, step-by-step explanation:
 
 ## 1. DNS Resolution
