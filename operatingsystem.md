@@ -1,2 +1,2 @@
 ### operating system notes
- -  chl ja bhai
+ -  chl ja bhai please
